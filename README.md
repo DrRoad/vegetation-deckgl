@@ -3,8 +3,8 @@
 This visualisation is based on Uber's [deck.gl](http://deck.gl).
 
 !["cardiff1"](stuff/cardiff.png)
-!["cardiff2"](stuff/cardif1.png)
-!["cardiff3"](stuff/cardif2.png)
+!["cardiff2"](stuff/cardiff2.png)
+!["cardiff3"](stuff/cardiff3.png)
 
 ## Running
 
