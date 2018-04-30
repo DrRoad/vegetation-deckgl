@@ -24,7 +24,7 @@ export default class DeckGLOverlay extends Component {
 
       zoom: 11,
       maxZoom: 20,
-      pitch: 0, //45,
+      pitch: 55,
       bearing: 0
     };
   }
@@ -47,14 +47,19 @@ export default class DeckGLOverlay extends Component {
       id: 'geojson',
       data,
       fp64: true,
-      getFillColor: f => colorScale(0.5*(f.properties.right.green+f.properties.left.green)), //[0x0, 0xFF, 0x00, 0xAA],
-      getRadius: f => Math.max(1, (0.5*(f.properties.right.green+f.properties.left.green))*50), 
-      
-      /*
-      pickable: true,
-      onHover: info => console.log('Hovered:', info)
-      */
+      //getFillColor: f => colorScale(0.5*(f.properties.right.segments.vegetation+f.properties.left.segments.vegetation)),
+      //getRadius: f => Math.max(1, (0.5*(f.properties.right.segments.vegetation+f.properties.left.segments.vegetation))*10)
+      //getFillColor: f => colorScale(0.5*(f.properties.right.segments.building+f.properties.left.segments.building)),
+      //getRadius: f => Math.max(5, (0.5*(f.properties.right.segments.building+f.properties.left.segments.building))*20) 
+      getFillColor: f => colorScale(Math.max(f.properties.right.segments.person,f.properties.left.segments.person)),
+      getRadius: f => Math.max(5, (Math.max(f.properties.right.segments.person,f.properties.left.segments.person))*100)
+      //getFillColor: f => colorScale(Math.max(f.properties.right.segments.car,f.properties.left.segments.car)),
+      //getRadius: f => Math.max(10, (Math.max(f.properties.right.segments.car,f.properties.left.segments.car))*40)
+      //getFillColor: f => colorScale(Math.max(f.properties.right.segments.sky,f.properties.left.segments.sky)),
+      //getRadius: f => Math.max(10, (Math.max(f.properties.right.segments.sky,f.properties.left.segments.sky))*50)
 
+	    //pickable: true,
+      //onHover: info => console.log('Hovered:', info)
     });
 
     return (
