@@ -16,7 +16,10 @@ from [mapbox](https://www.mapbox.com/).
 To run it, install `nodejs`, then:
 
 ```bash
-cd data; unzip cardiff_segments.zip ;cd .. 
+cd data
+wget https://github.com/datasciencecampus/street-view-pipeline/raw/master/data/cardiff_segments.zip
+unzip cardiff_segments.zip ;cd .. 
+
 npm install
 export MapboxAccessToken="MY_SECRET_TOKEN"
 npm start
