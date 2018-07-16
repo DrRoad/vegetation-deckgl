@@ -28,12 +28,3 @@ npm start
 The code is mainly based on the 
 [GeoJsonLayer](https://github.com/uber/deck.gl/blob/master/docs/layers/geojson-layer.md)
 example in the deck.gl docs.
-
-## Notes
-
-The heatmap colour scheme has been scaled to match the quantiles of the green 
-distribution for streets in Manchester. 
-[chroma.js](https://github.com/gka/chroma.js/) has been used for colour 
-manipulation.
-
-!["green distribution"](stuff/green_dist.png)
