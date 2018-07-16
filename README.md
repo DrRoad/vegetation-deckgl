@@ -16,6 +16,7 @@ from [mapbox](https://www.mapbox.com/).
 To run it, install `nodejs`, then:
 
 ```bash
+cd data; unzip cardiff_segments.zip ;cd .. 
 npm install
 export MapboxAccessToken="MY_SECRET_TOKEN"
 npm start
@@ -33,4 +34,3 @@ distribution for streets in Manchester.
 manipulation.
 
 !["green distribution"](stuff/green_dist.png)
-
