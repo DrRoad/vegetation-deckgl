@@ -44,21 +44,6 @@ const DATA_URL = 'data/cardiff_segments.geojson';
 var colorScale = (function() {
   // green hues from http://colorbrewer2.org/
 
-  // pink
-//  var hue = ['#f7f4f9','#e7e1ef','#d4b9da','#c994c7','#df65b0',
-//             '#e7298a','#ce1256','#980043','#67001f'].reverse();
-
-	// red
- // var hue = ['#fff5f0','#fee0d2','#fcbba1','#fc9272','#fb6a4a','#ef3b2c','#cb181d','#a50f15','#67000d'].reverse();
-	// green
-//	var hue = ['#ffffff','#e5f5e0','#c7e9c0','#a1d99b','#74c476','#41ab5d','#238b45','#006d2c', '#ff0000'/*'#00441b'*/];//.reverse();
-
-
-
-	//var hue = ['#ff0000',/*'#e5f5e0','#c7e9c0'*/   /*'#a1d99b','#74c476','#41ab5d'*/ '#238b45','#238b45','#238b45',   '#238b45','#006d2c', '#00441b'].reverse();
-
-
-	
 	// fire (with blue for lowest values.)
   //var hue = ['#555555', '#555555','#ffeda0','#fed976','#feb24c','#fd8d3c',
   //           '#fc4e2a','#e31a1c','#bd0026', '#ff0000'];
@@ -66,15 +51,12 @@ var colorScale = (function() {
   // domain scaled to quantiles.
   //var domain = [0.5,    0.2862, 0.2001, 0.1503, 0.1169, 
   //              0.0916, 0.0716, 0.0544, 0.0389, 0.0236];
-  var domain = [0.47, 0.3, 0.2, 0.15, 0.10, 0.05, 0.03, 0.1, 0.005, 0.001];
+  //var domain = [0.47, 0.3, 0.2, 0.15, 0.10, 0.05, 0.03, 0.1, 0.005, 0.001];
   //var scale = chroma.scale(hue);//.domain(domain);
 
-	// ppl
-	var scale = chroma.scale(['white', 'yellow', 'orange', 'red', 'black']).domain([0.0025, 0]);
 
 
-	// cars
-//var scale = chroma.scale(['white', 'yellow', 'orange', 'red', 'black']).domain([0.5, 0]);
+  var scale = chroma.scale(['white', 'yellow', 'orange', 'red', 'black']).domain([0.5, 0]);
 
 	return function(r) {
     //var z = Math.log(r);
