@@ -1,5 +1,8 @@
 # Green streets visualisation
 
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+[![LICENSE.](https://img.shields.io/badge/license-OGL--3-blue.svg?style=flat)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+
 This visualisation is based on Uber's [deck.gl](http://deck.gl).
 
 !["manchester1"](stuff/manchester1.png)
