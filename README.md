@@ -14,20 +14,21 @@ from [mapbox](https://www.mapbox.com/).
 
 To run, install `nodejs`, then:
 
-Get sample data for Cardiff from our [street-view-pipeline](https://github.com/datasciencecampus/street-view-pipeline):
+1. Get sample data for Cardiff from our [street-view-pipeline](https://github.com/datasciencecampus/street-view-pipeline)
 
 ```bash
 cd data
 ./download.sh
 cd -
+```
 
-Install dependencies:
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-Run:
+3. Run
 
 ```
 export MapboxAccessToken="MY_SECRET_TOKEN"
