@@ -1,29 +1,35 @@
-# Green streets visualisation
+# Urban vegetation visualisation (demo) 
 
 [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
 [![LICENSE.](https://img.shields.io/badge/license-OGL--3-blue.svg?style=flat)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
 
-This visualisation is based on Uber's [deck.gl](http://deck.gl).
+> Based on Uber's [deck.gl](http://deck.gl).
 
-!["manchester1"](stuff/manchester1.png)
-!["manchester2"](stuff/manchester2.png)
-!["manchester3"](stuff/manchester3.png)
-!["manchester4"](stuff/manchester4.png)
-!["manchester5"](stuff/manchester5.png)
+!["Cardiff"](stuff/cardiff.jpg)
 
 ## Running
 
 Get a developer [api token](https://www.mapbox.com/help/how-access-tokens-work/) 
 from [mapbox](https://www.mapbox.com/).
 
-To run it, install `nodejs`, then:
+To run, install `nodejs`, then:
+
+Get sample data for Cardiff from our [street-view-pipeline](https://github.com/datasciencecampus/street-view-pipeline):
 
 ```bash
 cd data
-wget https://github.com/datasciencecampus/street-view-pipeline/raw/master/data/cardiff_segments.zip
-unzip cardiff_segments.zip ;cd .. 
+./download.sh
+cd -
 
+Install dependencies:
+
+```bash
 npm install
+```
+
+Run:
+
+```
 export MapboxAccessToken="MY_SECRET_TOKEN"
 npm start
 ```
