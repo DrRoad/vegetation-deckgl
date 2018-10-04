@@ -30,9 +30,15 @@ npm install
 
 3. Run
 
-```
+```bash
 export MapboxAccessToken="MY_SECRET_TOKEN"
 npm start
+```
+
+4. Building
+
+```bash
+npm run build
 ```
 
 The code is mainly based on the 
