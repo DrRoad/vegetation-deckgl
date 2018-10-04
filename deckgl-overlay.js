@@ -32,8 +32,8 @@ export default class DeckGLOverlay extends Component {
       id: 'geojson',
       data,
       fp64: true,
-      getFillColor: f => colorScale(0.5*(f.properties.right.segments.vegetation+f.properties.left.segments.vegetation)),
-      getRadius: f => Math.max(1, (0.5*(f.properties.right.segments.vegetation+f.properties.left.segments.vegetation))*40)
+      getFillColor: f => colorScale(Math.max(f.properties.right.segments.vegetation, f.properties.left.segments.vegetation)),
+      getRadius: f => Math.max(1,  (Math.max(f.properties.right.segments.vegetation, f.properties.left.segments.vegetation))*40)
     });
 
     return (
